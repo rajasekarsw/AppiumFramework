@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.Utility;
 
 public class SettingsPage {
-    AppiumDriver driver=null;
+    AndroidDriver driver;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Tips & support\"]")
     private WebElement helpSubmenu;
