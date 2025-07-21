@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyAppiumTestSuite">
+    <test name="AndroidTests">
+        <classes>
+            <class name="testcases.SettingappVersionVerification"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="listener.ListenerClass"/>
+    </listeners>
+
+</suite>
