@@ -27,11 +27,11 @@ public class BaseClass {
             driverThreadLocal.get().quit();
     }
 
-   public static AppiumDriver getDriver() {
+   public static AndroidDriver getDriver() {
         return driverThreadLocal.get() == null ? initDriver() : driverThreadLocal.get();
     }
 
-   static AppiumDriver initDriver(){
+   static AndroidDriver initDriver(){
         UiAutomator2Options uiAutomator2Options=new UiAutomator2Options();
         uiAutomator2Options.setPlatformName("android");
         uiAutomator2Options.setAppPackage("com.android.settings");

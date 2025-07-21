@@ -1,7 +1,7 @@
 package testcases;
 
 import base.BaseClass;
-import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,7 +10,7 @@ import pages.SettingsPage;
 
 public class SettingappVersionVerification {
 
-    AppiumDriver driver=null;
+    AndroidDriver driver=null;
     SettingsPage settingsPage=null;
     SettingsHelpPage settingsHelpPage=null;
 

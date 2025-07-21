@@ -1,7 +1,7 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.pagefactory.AndroidBy;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.NoSuchElementException;
@@ -15,7 +15,7 @@ public class SettingsPage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/title\" and @text=\"Tips & support\"]")
     private WebElement helpSubmenu;
 
-    public SettingsPage(AppiumDriver driver){
+    public SettingsPage(AndroidDriver driver){
         this.driver=driver;
         PageFactory.initElements(new AppiumFieldDecorator(this.driver),this);
     }
