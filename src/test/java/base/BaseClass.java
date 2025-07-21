@@ -20,8 +20,8 @@ public class BaseClass {
 
     static Properties properties;
     @BeforeSuite
-    public void setUp() throws IOException {
-       // driverThreadLocal.set(getDriver());
+    public void setUp() {
+
     }
 
     @AfterSuite
